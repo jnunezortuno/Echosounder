@@ -51,7 +51,7 @@ class MainWindow(W.QMainWindow):
         self.frame_count = 0
         self.last_frame_time = None
         self.history = np.zeros((SAMPLES, HISTORY), dtype=np.float32)
-        self.setWindowTitle("Echosounder · Python")
+        self.setWindowTitle("Echosounder · CUD-ENM")
         self.resize(1320, 850)
         self.setMinimumSize(980, 720)
         self.setStyleSheet(STYLE)
@@ -68,7 +68,7 @@ class MainWindow(W.QMainWindow):
         outer.setSpacing(16)
         header = W.QHBoxLayout()
         brand = W.QVBoxLayout()
-        brand.addWidget(self._label("ECHOSOUNDER", "title"))
+        brand.addWidget(self._label("ECHOSOUNDER CUD-ENM", "title"))
         brand.addWidget(self._label("Adquisición y visualización de ecos", "muted"))
         header.addLayout(brand)
         header.addStretch()
@@ -120,27 +120,48 @@ class MainWindow(W.QMainWindow):
         form = W.QFormLayout(acquisition)
         self.delay = self._spin(0, 1000, 50)
         self.delay.setSuffix(" µs")
+        self.delay.setToolTip(
+            "Retardo de inicio de la ventana de adquisición, en microsegundos. "
+            "Desplaza el eje de tiempo y la profundidad estimada."
+        )
         self.repetitions = self._spin(1, 256, 1)
+        self.repetitions.setToolTip(
+            "Número de repeticiones configurado por traza. Este valor interviene en la escala de amplitud mostrada."
+        )
         self.cycles = self._spin(1, 16, 3)
+        self.cycles.setToolTip(
+            "Ciclos del pulso transmitido por repetición."
+        )
         self.gain = W.QComboBox()
         for code, multiplier in GAINS.items():
             self.gain.addItem(f"×{multiplier:g}", code)
         self.gain.setCurrentIndex(self.gain.findData(0x90))
+        self.gain.setToolTip(
+            "Ganancia configurada en el instrumento. El voltaje mostrado no se corrige por esta ganancia."
+        )
+
         self.sound_speed = W.QDoubleSpinBox()
         self.sound_speed.setRange(300, 5000)
         self.sound_speed.setValue(1500)
         self.sound_speed.setSuffix(" m/s")
         self.sound_speed.setDecimals(1)
+        self.sound_speed.setToolTip(
+            "Velocidad del sonido asumida en el medio."
+        )
         for label, widget in (("Inicio", self.delay), ("Repeticiones", self.repetitions),
                               ("Ciclos", self.cycles), ("Ganancia", self.gain),
                               ("Velocidad sonido", self.sound_speed)):
             form.addRow(label, widget)
         self.apply_button = W.QPushButton("Aplicar ajustes")
+        self.apply_button.setToolTip(
+            "Envía los ajustes de adquisición al instrumento. La aplicación reinicia el "
+            "historial al confirmarlos."
+        )
         self.apply_button.clicked.connect(self.apply_settings)
         form.addRow(self.apply_button)
         side.addWidget(acquisition)
         side.addStretch()
-        self.source_note = self._label("La simulación genera dos ecos y ruido. No utiliza el puerto serie.", "muted")
+        self.source_note = self._label("La simulación genera dos ecos y ruido.", "muted")
         self.source_note.setWordWrap(True)
         side.addWidget(self.source_note)
         side.addWidget(self._label("1.700 muestras · 5 MHz\nHistorial de 256 trazas", "muted"))
@@ -496,9 +517,9 @@ class MainWindow(W.QMainWindow):
         self.run_button.setEnabled(self.connected and editable and not dirty)
         self.stop_button.setEnabled(self.connected and self.busy and not self.pending and not self.closing)
         self.export_button.setEnabled(self.last_frame is not None and not self.closing)
-        self.source_note.setText("La simulación genera dos ecos y ruido. No utiliza el puerto serie."
-                                 if self.source.currentData() else
-                                 "Selecciona el puerto de la ecosonda. La frecuencia de muestreo prevista es 5 MHz.")
+        self.source_note.setText("La simulación genera dos ecos y ruido."
+            if self.source.currentData() else
+            "Selecciona el puerto de la ecosonda. La frecuencia de muestreo prevista es 5 MHz.")
 
     def closeEvent(self, event):
         if self.worker is not None:

@@ -1,6 +1,6 @@
 # Echosounder Python
 
-Versión inicial de la aplicación de escritorio, escrita en Python y basada en el estudio del ejecutable original. Incluye una simulación autónoma y un cliente del protocolo serie reconstruido. No requiere el SDK de Qt 5 ni las DLL del programa C++.
+Versión 1.0 de la aplicación de escritorio, escrita en Python y basada en el estudio del ejecutable original. Incluye una simulación autónoma y un cliente del protocolo serie reconstruido. No requiere el SDK de Qt 5 ni las DLL del programa C++.
 
 ![Vista de señal con datos simulados](images/python-wave.png)
 
@@ -18,11 +18,12 @@ Para el uso normal, omite `--simulate` o utiliza el lanzador. El programa solo a
 
 ## Instalación en otra máquina
 
-Se necesita Python de 64 bits, versión 3.11 o posterior. La implementación se ha probado en Windows con Python 3.14. Los módulos de procesamiento y transporte son portables; la interfaz aún no se ha probado en Linux o macOS.
+Se necesita CPython de 64 bits, versión 3.11 o posterior. La interfaz se ha comprobado en Windows con CPython 3.13 y PySide6 6.12.0. Usa el intérprete de CPython al crear `.venv`; un entorno basado en Radioconda puede fallar al cargar las DLL de Qt. Los módulos de procesamiento y transporte son portables; la interfaz aún no se ha probado en Linux o macOS.
 
 ```powershell
 python -m venv .venv
 .\.venv\Scripts\python.exe -m pip install -e .
+\.venv\Scripts\python.exe -c "import echosounder.gui; from PySide6.QtCore import QTimer; print('QtCore OK')"
 .\.venv\Scripts\python.exe -m echosounder
 ```
 

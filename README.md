@@ -2,7 +2,7 @@
 
 Aplicación de adquisición y visualización para una ecosonda: señal temporal, espectro y mapa de profundidad.
 
-## Versión Python
+## Versión Python 1.0
 
 Implementación con PySide6, PyQtGraph, NumPy y pySerial. Incluye un modo de simulación para utilizarla sin hardware, adquisición en un hilo independiente y exportación CSV.
 
@@ -14,7 +14,7 @@ Con el entorno local ya instalado, abre **`Echosounder-Python.bat`** o ejecuta:
 .\.venv\Scripts\python.exe -m echosounder --simulate
 ```
 
-Para instalar desde cero con Python 3.11 o posterior:
+Para instalar desde cero con CPython de 64 bits (3.11 o posterior; comprobado con 3.13):
 
 ```powershell
 python -m venv .venv
