@@ -1,0 +1,5 @@
+# Archivos intermedios de compilacion
+*.o
+moc_*.cpp
+moc_predefs.h
+qrc_*.cpp
