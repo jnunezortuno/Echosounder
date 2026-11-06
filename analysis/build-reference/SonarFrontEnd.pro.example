@@ -1,0 +1,14 @@
+# Plantilla para un futuro proyecto reconstruido desde fuentes.
+# Los fuentes y .ui enumerados NO estan disponibles actualmente.
+TEMPLATE = app
+TARGET = SonarFrontEnd
+QT += core gui widgets serialport printsupport
+CONFIG += c++11 release
+CONFIG -= debug debug_and_release console
+
+SOURCES += main.cpp mainwindow.cpp settings.cpp fft.cpp qcustomplot.cpp
+HEADERS += mainwindow.h settings.h fft.h qcustomplot.h
+FORMS += mainwindow.ui settings.ui
+RESOURCES += reources.qrc
+
+# Regenerar moc, uic y rcc con este SDK; no incluir los moc_*.cpp antiguos.

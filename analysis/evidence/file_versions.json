@@ -1,0 +1,132 @@
+﻿[
+    {
+        "File":  "D3Dcompiler_47.dll",
+        "Version":  "6.3.9600.16384 (winblue_rtm.130821-1623)",
+        "Product":  "Microsoft® Windows® Operating System"
+    },
+    {
+        "File":  "libEGL.dll",
+        "Version":  "5.14.2.0",
+        "Product":  "libEGL"
+    },
+    {
+        "File":  "libgcc_s_seh-1.dll",
+        "Version":  null,
+        "Product":  null
+    },
+    {
+        "File":  "libGLESv2.dll",
+        "Version":  "5.14.2.0",
+        "Product":  "libGLESv2"
+    },
+    {
+        "File":  "libstdc++-6.dll",
+        "Version":  null,
+        "Product":  null
+    },
+    {
+        "File":  "libwinpthread-1.dll",
+        "Version":  "1, 0, 0, 0",
+        "Product":  ""
+    },
+    {
+        "File":  "opengl32sw.dll",
+        "Version":  null,
+        "Product":  null
+    },
+    {
+        "File":  "Qt5Core.dll",
+        "Version":  "5.14.2.0",
+        "Product":  "Qt5"
+    },
+    {
+        "File":  "Qt5Gui.dll",
+        "Version":  "5.14.2.0",
+        "Product":  "Qt5"
+    },
+    {
+        "File":  "Qt5PrintSupport.dll",
+        "Version":  "5.14.2.0",
+        "Product":  "Qt5"
+    },
+    {
+        "File":  "Qt5SerialPort.dll",
+        "Version":  "5.14.2.0",
+        "Product":  "Qt5"
+    },
+    {
+        "File":  "Qt5Svg.dll",
+        "Version":  "5.14.2.0",
+        "Product":  "Qt5"
+    },
+    {
+        "File":  "Qt5Widgets.dll",
+        "Version":  "5.14.2.0",
+        "Product":  "Qt5"
+    },
+    {
+        "File":  "iconengines\\qsvgicon.dll",
+        "Version":  "5.14.2.0",
+        "Product":  "Qt5"
+    },
+    {
+        "File":  "imageformats\\qgif.dll",
+        "Version":  "5.14.2.0",
+        "Product":  "Qt5"
+    },
+    {
+        "File":  "imageformats\\qicns.dll",
+        "Version":  "5.14.2.0",
+        "Product":  "Qt5"
+    },
+    {
+        "File":  "imageformats\\qico.dll",
+        "Version":  "5.14.2.0",
+        "Product":  "Qt5"
+    },
+    {
+        "File":  "imageformats\\qjpeg.dll",
+        "Version":  "5.14.2.0",
+        "Product":  "Qt5"
+    },
+    {
+        "File":  "imageformats\\qsvg.dll",
+        "Version":  "5.14.2.0",
+        "Product":  "Qt5"
+    },
+    {
+        "File":  "imageformats\\qtga.dll",
+        "Version":  "5.14.2.0",
+        "Product":  "Qt5"
+    },
+    {
+        "File":  "imageformats\\qtiff.dll",
+        "Version":  "5.14.2.0",
+        "Product":  "Qt5"
+    },
+    {
+        "File":  "imageformats\\qwbmp.dll",
+        "Version":  "5.14.2.0",
+        "Product":  "Qt5"
+    },
+    {
+        "File":  "imageformats\\qwebp.dll",
+        "Version":  "5.14.2.0",
+        "Product":  "Qt5"
+    },
+    {
+        "File":  "platforms\\qwindows.dll",
+        "Version":  "5.14.2.0",
+        "Product":  "Qt5"
+    },
+    {
+        "File":  "printsupport\\windowsprintersupport.dll",
+        "Version":  "5.14.2.0",
+        "Product":  "Qt5"
+    },
+    {
+        "File":  "styles\\qwindowsvistastyle.dll",
+        "Version":  "5.14.2.0",
+        "Product":  "Qt5"
+    }
+]

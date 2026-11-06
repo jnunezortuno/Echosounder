@@ -1,0 +1,14 @@
+<RCC>
+  <qresource prefix="/">
+    <file>art/map.svg</file>
+    <file>art/reset_zoom.svg</file>
+    <file>art/wave.svg</file>
+    <file>art/stop.svg</file>
+    <file>art/acquire_loop.svg</file>
+    <file>art/fft.svg</file>
+    <file>art/diconnect_usb.svg</file>
+    <file>art/setting.svg</file>
+    <file>art/acquire_single.svg</file>
+    <file>art/connect_usb.svg</file>
+  </qresource>
+</RCC>

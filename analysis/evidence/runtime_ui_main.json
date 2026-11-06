@@ -1,0 +1,252 @@
+﻿[
+    {
+        "Name":  "Echosounder v0.1",
+        "AutomationId":  "MainWindow",
+        "Class":  "MainWindow",
+        "Control":  "ControlType.Window",
+        "Enabled":  true,
+        "Handle":  920984,
+        "Value":  "",
+        "Range":  null
+    },
+    {
+        "Name":  "",
+        "AutomationId":  "MainWindow.centralwidget",
+        "Class":  "QWidget",
+        "Control":  "ControlType.Group",
+        "Enabled":  true,
+        "Handle":  0,
+        "Value":  "",
+        "Range":  null
+    },
+    {
+        "Name":  "",
+        "AutomationId":  "MainWindow.centralwidget.linePlot",
+        "Class":  "QCustomPlot",
+        "Control":  "ControlType.Group",
+        "Enabled":  true,
+        "Handle":  0,
+        "Value":  "",
+        "Range":  null
+    },
+    {
+        "Name":  "",
+        "AutomationId":  "MainWindow.menubar",
+        "Class":  "QMenuBar",
+        "Control":  "ControlType.MenuBar",
+        "Enabled":  true,
+        "Handle":  0,
+        "Value":  "",
+        "Range":  null
+    },
+    {
+        "Name":  "Connection",
+        "AutomationId":  "",
+        "Class":  "QAction",
+        "Control":  "ControlType.MenuItem",
+        "Enabled":  true,
+        "Handle":  0,
+        "Value":  "",
+        "Range":  null
+    },
+    {
+        "Name":  "Control",
+        "AutomationId":  "",
+        "Class":  "QAction",
+        "Control":  "ControlType.MenuItem",
+        "Enabled":  true,
+        "Handle":  0,
+        "Value":  "",
+        "Range":  null
+    },
+    {
+        "Name":  "Display",
+        "AutomationId":  "",
+        "Class":  "QAction",
+        "Control":  "ControlType.MenuItem",
+        "Enabled":  true,
+        "Handle":  0,
+        "Value":  "",
+        "Range":  null
+    },
+    {
+        "Name":  "Not connected. Default port COM3.",
+        "AutomationId":  "MainWindow.statusbar",
+        "Class":  "QStatusBar",
+        "Control":  "ControlType.StatusBar",
+        "Enabled":  true,
+        "Handle":  0,
+        "Value":  "",
+        "Range":  null
+    },
+    {
+        "Name":  "",
+        "AutomationId":  "",
+        "Class":  "QSizeGrip",
+        "Control":  "ControlType.Thumb",
+        "Enabled":  true,
+        "Handle":  0,
+        "Value":  "",
+        "Range":  null
+    },
+    {
+        "Name":  "0 fps",
+        "AutomationId":  "",
+        "Class":  "QLabel",
+        "Control":  "ControlType.Text",
+        "Enabled":  true,
+        "Handle":  0,
+        "Value":  null,
+        "Range":  null
+    },
+    {
+        "Name":  "toolBar",
+        "AutomationId":  "MainWindow.toolBar",
+        "Class":  "QToolBar",
+        "Control":  "ControlType.ToolBar",
+        "Enabled":  true,
+        "Handle":  0,
+        "Value":  "",
+        "Range":  null
+    },
+    {
+        "Name":  "Connect",
+        "AutomationId":  "",
+        "Class":  "QToolButton",
+        "Control":  "ControlType.Button",
+        "Enabled":  true,
+        "Handle":  0,
+        "Value":  "",
+        "Range":  null
+    },
+    {
+        "Name":  "Disconnect",
+        "AutomationId":  "",
+        "Class":  "QToolButton",
+        "Control":  "ControlType.Button",
+        "Enabled":  false,
+        "Handle":  0,
+        "Value":  "",
+        "Range":  null
+    },
+    {
+        "Name":  "",
+        "AutomationId":  "",
+        "Class":  "QToolBarSeparator",
+        "Control":  "ControlType.Group",
+        "Enabled":  true,
+        "Handle":  0,
+        "Value":  "",
+        "Range":  null
+    },
+    {
+        "Name":  "Settings",
+        "AutomationId":  "",
+        "Class":  "QToolButton",
+        "Control":  "ControlType.Button",
+        "Enabled":  true,
+        "Handle":  0,
+        "Value":  "",
+        "Range":  null
+    },
+    {
+        "Name":  "",
+        "AutomationId":  "",
+        "Class":  "QToolBarSeparator",
+        "Control":  "ControlType.Group",
+        "Enabled":  true,
+        "Handle":  0,
+        "Value":  "",
+        "Range":  null
+    },
+    {
+        "Name":  "Acquire Single",
+        "AutomationId":  "",
+        "Class":  "QToolButton",
+        "Control":  "ControlType.Button",
+        "Enabled":  false,
+        "Handle":  0,
+        "Value":  "",
+        "Range":  null
+    },
+    {
+        "Name":  "Acquire Continuously",
+        "AutomationId":  "",
+        "Class":  "QToolButton",
+        "Control":  "ControlType.Button",
+        "Enabled":  false,
+        "Handle":  0,
+        "Value":  "",
+        "Range":  null
+    },
+    {
+        "Name":  "Stop",
+        "AutomationId":  "",
+        "Class":  "QToolButton",
+        "Control":  "ControlType.Button",
+        "Enabled":  false,
+        "Handle":  0,
+        "Value":  "",
+        "Range":  null
+    },
+    {
+        "Name":  "",
+        "AutomationId":  "",
+        "Class":  "QToolBarSeparator",
+        "Control":  "ControlType.Group",
+        "Enabled":  true,
+        "Handle":  0,
+        "Value":  "",
+        "Range":  null
+    },
+    {
+        "Name":  "Waveform",
+        "AutomationId":  "",
+        "Class":  "QToolButton",
+        "Control":  "ControlType.Button",
+        "Enabled":  false,
+        "Handle":  0,
+        "Value":  "",
+        "Range":  null
+    },
+    {
+        "Name":  "Spectrum",
+        "AutomationId":  "",
+        "Class":  "QToolButton",
+        "Control":  "ControlType.Button",
+        "Enabled":  true,
+        "Handle":  0,
+        "Value":  "",
+        "Range":  null
+    },
+    {
+        "Name":  "Depth map",
+        "AutomationId":  "",
+        "Class":  "QToolButton",
+        "Control":  "ControlType.Button",
+        "Enabled":  true,
+        "Handle":  0,
+        "Value":  "",
+        "Range":  null
+    },
+    {
+        "Name":  "Reset Zoom",
+        "AutomationId":  "",
+        "Class":  "QToolButton",
+        "Control":  "ControlType.Button",
+        "Enabled":  true,
+        "Handle":  0,
+        "Value":  "",
+        "Range":  null
+    },
+    {
+        "Name":  "",
+        "AutomationId":  "",
+        "Class":  "QToolBarSeparator",
+        "Control":  "ControlType.Group",
+        "Enabled":  true,
+        "Handle":  0,
+        "Value":  "",
+        "Range":  null
+    }
+]

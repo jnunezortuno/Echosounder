@@ -3,3 +3,16 @@
 moc_*.cpp
 moc_predefs.h
 qrc_*.cpp
+
+# Python
+.venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+build/
+dist/
+
+# Volcados regenerables del analisis binario
+analysis/evidence/*.asm.txt
+analysis/evidence/*.strings.json

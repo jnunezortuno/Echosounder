@@ -1,0 +1,147 @@
+{
+  "resources": [
+    {
+      "file": "art/map.svg",
+      "size": 4443,
+      "compressed_in_original": false,
+      "sha256": "bf47d8d43c7ae514d0911ca79084d384f202f548e0591da980cf2a0efce69cf9"
+    },
+    {
+      "file": "art/reset_zoom.svg",
+      "size": 3053,
+      "compressed_in_original": false,
+      "sha256": "061c486935aca945c1466bc9c8d9f497325c4f6494e023135894d596f7fe5e1a"
+    },
+    {
+      "file": "art/wave.svg",
+      "size": 2249,
+      "compressed_in_original": false,
+      "sha256": "59fb89dc3f192a698fb8d0bc83d4457b62c20eec88edb66f2f6bc9d68b10b299"
+    },
+    {
+      "file": "art/stop.svg",
+      "size": 1875,
+      "compressed_in_original": false,
+      "sha256": "6b66d6c249da7f60914f2d10c3c468eb7187e166ad6e3be3f4e127ed45534687"
+    },
+    {
+      "file": "art/acquire_loop.svg",
+      "size": 3907,
+      "compressed_in_original": false,
+      "sha256": "36bc29585b7d33070c84cefff31e382d0235c617a60919d92161a4013852c69a"
+    },
+    {
+      "file": "art/fft.svg",
+      "size": 2507,
+      "compressed_in_original": false,
+      "sha256": "9bc805e58c0d4151f9bf4a039eabb03a440bfc04c3eb0e8541cd9caddcdc8d4f"
+    },
+    {
+      "file": "art/diconnect_usb.svg",
+      "size": 4879,
+      "compressed_in_original": true,
+      "sha256": "e5a83bd8fbf5b6c2cf79928b46867b55c58d9e19587f4deda246aa9f46784a3b"
+    },
+    {
+      "file": "art/setting.svg",
+      "size": 3914,
+      "compressed_in_original": false,
+      "sha256": "6c29da6c1aba46535a315be40c36a7bea27e5e17af91d74f7049a2a8ebf2d012"
+    },
+    {
+      "file": "art/acquire_single.svg",
+      "size": 2771,
+      "compressed_in_original": false,
+      "sha256": "9bc2d8d78628e4f2c18bf6b9e444475ff8f93109d4be0bd4861e875c71d5d917"
+    },
+    {
+      "file": "art/connect_usb.svg",
+      "size": 4110,
+      "compressed_in_original": true,
+      "sha256": "4bb2a516ba5acfb2a2fc87bc76de5ed9ff312dd1287253ffedab9e6ed8db1bf8"
+    }
+  ],
+  "object_executable_correlations": [
+    {
+      "file": "fft.o",
+      "object_sha256": "e08723e226fd17071282b3271f182eed86504a59f5aa8510bdb3084e69e70279",
+      "text_size": 15168,
+      "seed_size": 317,
+      "executable_file_offset": 2400,
+      "verified_nonrelocated_bytes": 14060,
+      "mismatch_count": 0
+    },
+    {
+      "file": "main.o",
+      "object_sha256": "ff260470b5d5d0cbc32166817aa81822f61c0cac066bb8b2ada436902603dfc1",
+      "text_size": 144,
+      "seed_size": 49,
+      "executable_file_offset": 17568,
+      "verified_nonrelocated_bytes": 108,
+      "mismatch_count": 0
+    },
+    {
+      "file": "mainwindow.o",
+      "object_sha256": "41dd032f795ff0c5eb91131a7e41ee0d530e911345898718938c76ad4b2178ae",
+      "text_size": 18336,
+      "seed_size": 371,
+      "executable_file_offset": 17712,
+      "verified_nonrelocated_bytes": 16472,
+      "mismatch_count": 0
+    },
+    {
+      "file": "moc_mainwindow.o",
+      "object_sha256": "739e5b93741d0ccb491e2e194d23c11b4b72d0540e950e535c8477fc01df4172",
+      "text_size": 368,
+      "seed_size": 75,
+      "executable_file_offset": 383712,
+      "verified_nonrelocated_bytes": 296,
+      "mismatch_count": 0
+    },
+    {
+      "file": "moc_qcustomplot.o",
+      "object_sha256": "7f80d669992664b5d99b5e7f81e9c2f15301b614c445612d70f6a7e96393d0e4",
+      "text_size": 40752,
+      "seed_size": 3902,
+      "executable_file_offset": 384080,
+      "verified_nonrelocated_bytes": 36384,
+      "mismatch_count": 0
+    },
+    {
+      "file": "moc_settings.o",
+      "object_sha256": "5784284c11d8f28e9d1a1fdb44efb21f6c5a70916fb257d7d2db9bb54070ee70",
+      "text_size": 144,
+      "seed_size": 31,
+      "executable_file_offset": 424832,
+      "verified_nonrelocated_bytes": 120,
+      "mismatch_count": 0
+    },
+    {
+      "file": "qcustomplot.o",
+      "object_sha256": "08a46b48ad10f139acc1eedd391dd1dea24449781ab9a688680334dbab674e6c",
+      "text_size": 343296,
+      "seed_size": 1818,
+      "executable_file_offset": 36048,
+      "verified_nonrelocated_bytes": 318096,
+      "mismatch_count": 0
+    },
+    {
+      "file": "qrc_reources.o",
+      "object_sha256": "d288d640c659302c4dc665682360ff5bbc2f43c73e85efd1a5d00ad41ad3c816",
+      "text_size": 128,
+      "seed_size": 39,
+      "executable_file_offset": 383584,
+      "verified_nonrelocated_bytes": 92,
+      "mismatch_count": 0
+    },
+    {
+      "file": "settings.o",
+      "object_sha256": "c43b881be5c613c4a90e84d0caa28e57cf9ef5315a3db85336601e015cfb9026",
+      "text_size": 4240,
+      "seed_size": 316,
+      "executable_file_offset": 379344,
+      "verified_nonrelocated_bytes": 3916,
+      "mismatch_count": 0
+    }
+  ]
+}
